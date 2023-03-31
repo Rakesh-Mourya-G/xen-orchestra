@@ -29,8 +29,8 @@ export const CpuSparkLines = ({ data, width = WIDTH, height = HEIGHT, strokeWidt
       <SparklinesLine
         style={{
           strokeWidth,
-          stroke: '#366e98',
-          fill: '#366e98',
+          stroke: '#6c4197',
+          fill: '#6c4197',
           fillOpacity: 0.5,
         }}
         color='#2598d9'
