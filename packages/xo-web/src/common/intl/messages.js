@@ -2036,7 +2036,7 @@ const messages = {
   xenOrchestraServer: 'Xen Orchestra server',
   xenOrchestraWeb: 'Xen Orchestra web client',
   noProSupport: 'Professional support missing!',
-  productionUse: 'Want to use in production?',
+  productionUse: 'Want to use in QRS hypervisor',
   getSupport: 'Get pro support with the Xen Orchestra Appliance at {website}',
   bugTracker: 'Bug Tracker',
   bugTrackerText: 'Issues? Report it!',
