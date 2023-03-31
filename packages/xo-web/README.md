@@ -1,8 +1,8 @@
-# Xen Orchestra Web [![Chat with us](https://storage.crisp.im/plugins/images/936925df-f37b-4ba8-bab0-70cd2edcb0be/badge.svg)](https://go.crisp.im/chat/embed/?website_id=-JzqzzwddSV7bKGtEyAQ) [![Build Status](https://travis-ci.org/vatesfr/xen-orchestra.png?branch=master)](https://travis-ci.org/vatesfr/xen-orchestra)
+# CloudVisor Web [![Chat with us](https://storage.crisp.im/plugins/images/936925df-f37b-4ba8-bab0-70cd2edcb0be/badge.svg)](https://go.crisp.im/chat/embed/?website_id=-JzqzzwddSV7bKGtEyAQ) [![Build Status](https://travis-ci.org/vatesfr/xen-orchestra.png?branch=master)](https://travis-ci.org/vatesfr/xen-orchestra)
 
 ![](http://i.imgur.com/tRffA5y.png)
 
-XO-Web is part of [Xen Orchestra](https://github.com/vatesfr/xen-orchestra), a web interface for XenServer or XAPI enabled hosts.
+XO-Web is part of [CloudVisor](https://github.com/vatesfr/xen-orchestra), a web interface for XenServer or XAPI enabled hosts.
 
 It is a web client for [XO-Server](https://github.com/vatesfr/xen-orchestra/tree/master/packages/xo-server).
 

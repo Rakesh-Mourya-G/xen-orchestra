@@ -1,6 +1,6 @@
 # Concepts
 
-This section is dedicated to all general concepts about Xen Orchestra backups.
+This section is dedicated to all general concepts about CloudVisor backups.
 
 ## Interface
 
@@ -121,7 +121,7 @@ In order to use this functionality, the CPU of the host the VM is restored on sh
 This feature is being deprecated in XCP-ng and Citrix Hypervisor. It's now replaced by RAM enabled backup!
 :::
 
-All backup types rely on snapshots. But what about data consistency? By default, Xen Orchestra will try to take a **quiesced snapshot** every time a snapshot is done (and fall back to normal snapshots if it's not possible).
+All backup types rely on snapshots. But what about data consistency? By default, CloudVisor will try to take a **quiesced snapshot** every time a snapshot is done (and fall back to normal snapshots if it's not possible).
 
 Snapshots of Windows VMs can be quiesced (especially MS SQL or Exchange services) after you have installed Xen Tools in your VMs. However, [there is an extra step to install the VSS provider on windows](https://xen-orchestra.com/blog/xenserver-quiesce-snapshots/). A quiesced snapshot means the operating system will be notified and the cache will be flushed to disks. This way, your backups will always be consistent.
 
@@ -190,7 +190,7 @@ Any Debian Linux mount point could be supported this way, until we add further o
 
 ## Restore a backup
 
-All your scheduled backups are acccessible in the "Restore" view in the backup section of Xen Orchestra.
+All your scheduled backups are acccessible in the "Restore" view in the backup section of CloudVisor.
 
 1. Select your remote and click on the eye icon to see the VMs available
 2. Choose the backup you want to restore
@@ -237,7 +237,7 @@ Citrix Hypervisor uses Gzip compression, which is:
 However, XCP-ng is using `zstd`, which is far better.
 
 :::tip
-If you have compression on your NFS share (or destination filesystem like ZFS), you can disable compression in Xen Orchestra.
+If you have compression on your NFS share (or destination filesystem like ZFS), you can disable compression in CloudVisor.
 :::
 
 ## Add a disk for local backups
@@ -275,7 +275,7 @@ The tag won't be automatically removed by XO on the replicated VMs, even if HA i
 
 ## Backup Concurrency
 
-Xen Orchestra 5.20 introduces new tools to manage backup concurrency. Below is an overview of the backup process and ways you can control concurrency in your own environment.
+CloudVisor 5.20 introduces new tools to manage backup concurrency. Below is an overview of the backup process and ways you can control concurrency in your own environment.
 
 ### Backup process
 
@@ -285,7 +285,7 @@ When you perform a backup in XCP-ng/XenServer, the first operation performed is 
 
 #### 2. Export
 
-Xen Orchestra will fetch the content of the snapshot made in step 1. This operation can be very long, obviously depending on the size of the snapshot to export: exporting 1TiB of data will take far longer than exporting 1GiB!
+CloudVisor will fetch the content of the snapshot made in step 1. This operation can be very long, obviously depending on the size of the snapshot to export: exporting 1TiB of data will take far longer than exporting 1GiB!
 
 #### 3. Snapshot removal
 

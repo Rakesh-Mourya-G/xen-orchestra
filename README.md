@@ -1,4 +1,4 @@
-# Xen Orchestra [![Build Status](https://travis-ci.org/vatesfr/xen-orchestra.png?branch=master)](https://travis-ci.org/vatesfr/xen-orchestra)
+# CloudVisor [![Build Status](https://travis-ci.org/vatesfr/xen-orchestra.png?branch=master)](https://travis-ci.org/vatesfr/xen-orchestra)
 
 ![](http://i.imgur.com/tRffA5y.png)
 

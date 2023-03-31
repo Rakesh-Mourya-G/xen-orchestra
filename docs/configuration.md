@@ -1,6 +1,6 @@
 # Configuration
 
-Once Xen Orchestra is installed, you can configure some parameters in the configuration file. Let's see how to do that.
+Once CloudVisor is installed, you can configure some parameters in the configuration file. Let's see how to do that.
 
 :::tip
 The configuration file is located at `/etc/xo-server/config.toml`.
@@ -66,7 +66,7 @@ You shouldn't have to change this. It's the path where `xo-web` files are served
 
 ## Custom certificate authority
 
-If you use certificates signed by an in-house CA for your XCP-ng or XenServer hosts, and want to have Xen Orchestra connect to them without rejection, you can use the [`NODE_EXTRA_CA_CERTS`](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file) environment variable.
+If you use certificates signed by an in-house CA for your XCP-ng or XenServer hosts, and want to have CloudVisor connect to them without rejection, you can use the [`NODE_EXTRA_CA_CERTS`](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file) environment variable.
 
 To enable this option in your XOA, create `/etc/systemd/system/xo-server.service.d/ca.conf` with the following content:
 
@@ -116,7 +116,7 @@ On XOA, the log file for XO-server is in `/var/log/syslog`. It contains all the 
 
 ## Reverse proxy
 
-If you don't want to have Xen Orchestra exposed directly outside, or just integrating it with your existing infrastructure, you can use a Reverse Proxy.
+If you don't want to have CloudVisor exposed directly outside, or just integrating it with your existing infrastructure, you can use a Reverse Proxy.
 
 ### Apache
 

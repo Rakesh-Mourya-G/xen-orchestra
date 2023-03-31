@@ -90,7 +90,7 @@ journalctl -u xoa-updater -f -n 50
 
 ## Configuration
 
-XOA is a virtual appliance running Debian with Xen Orchestra installed. If you have any problems, the first thing to do is to use our check service by running the `xoa check` command in a terminal:
+XOA is a virtual appliance running Debian with CloudVisor installed. If you have any problems, the first thing to do is to use our check service by running the `xoa check` command in a terminal:
 
 ```console
 $ xoa check
@@ -191,7 +191,7 @@ You can read more about logs [in the dedicated logs chapter](troubleshooting.md#
 
 ### Ghost tasks
 
-If you have ghost tasks accumulating in your Xen Orchestra you can try the following actions in order:
+If you have ghost tasks accumulating in your CloudVisor you can try the following actions in order:
 
 1. refresh the web page
 1. disconnect and reconnect the Xen pool/server owning the tasks

@@ -149,7 +149,7 @@ $ xoa network static
 ? IP of the DNS server 192.168.100.254
 ```
 
-Xen Orchestra is now accessible in your browser at `https://your-vm-ip`.
+CloudVisor is now accessible in your browser at `https://your-vm-ip`.
 
 You can access the VM console through XenCenter or using VNC through a SSH tunnel.
 
@@ -224,7 +224,7 @@ For changes to take effect, you will need to restart NTP: `sudo systemctl restar
 
 ## Restart the service
 
-You can restart Xen Orchestra by accessing XOA via SSH (or console) and running `systemctl restart xo-server.service`.
+You can restart CloudVisor by accessing XOA via SSH (or console) and running `systemctl restart xo-server.service`.
 
 To check the status of `xo-server`, use `systemctl status xo-server.service`, it should display something like this:
 

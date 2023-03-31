@@ -1,7 +1,7 @@
 # Users
 
 :::tip
-For system users (in XOA), please refer to [XOA section](xoa.md). Here, we are only talking about users in Xen Orchestra application
+For system users (in XOA), please refer to [XOA section](xoa.md). Here, we are only talking about users in CloudVisor application
 :::
 
 There are 2 types of XO users:
@@ -11,11 +11,11 @@ There are 2 types of XO users:
 
 ## Authentication
 
-Xen Orchestra supports various types of user authentication, internal or even external thanks to the usage of the [Passport library](http://passportjs.org/).
+CloudVisor supports various types of user authentication, internal or even external thanks to the usage of the [Passport library](http://passportjs.org/).
 
 :::tip
 Any account created by an external authentication process (LDAP, SSO...) will be a **user** without any permission.
-Also, you don't have to create an external user by yourself: it will be created automatically in Xen Orchestra after its first connection.
+Also, you don't have to create an external user by yourself: it will be created automatically in CloudVisor after its first connection.
 :::
 
 ### Built-in
@@ -46,7 +46,7 @@ LDAP Filters allow you to properly match your user. It's not an easy task to alw
 - `'(uid={{name}})'` is usually the default filter for _Open LDAP_
 - `'(cn={{name}})'`, `'(sAMAccountName={{name}})'`, `'(sAMAccountName={{name}}@<domain>)'` or even `'(userPrincipalName={{name}})'` are widely used for _Active Directory_. Please check with your AD Admin to find the right one.
 
-After finishing the configuration, you can try to log in with your LDAP username and password. Finally, right after your initial successful log in, your account will be visible in the user list of Xen Orchestra.
+After finishing the configuration, you can try to log in with your LDAP username and password. Finally, right after your initial successful log in, your account will be visible in the user list of CloudVisor.
 
 #### Groups
 
@@ -119,7 +119,7 @@ First you need to configure a new app in your GitHub account:
 
 ![](https://raw.githubusercontent.com/vatesfr/xen-orchestra/master/packages/xo-server-auth-github/github.png)
 
-When you get your `clientID` and your `clientSecret`, you can configure them in the GitHub Plugin inside the "Settings/Plugins" view of Xen Orchestra.
+When you get your `clientID` and your `clientSecret`, you can configure them in the GitHub Plugin inside the "Settings/Plugins" view of CloudVisor.
 
 Be sure to activate the plugin after you save the configuration (button on top). When it's done, you'll see a link in the login view, this is where you'll go to authenticate:
 

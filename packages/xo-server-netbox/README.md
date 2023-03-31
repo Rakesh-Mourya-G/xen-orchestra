@@ -2,7 +2,7 @@
 
 # xo-server-netbox
 
-> Synchronizes pools managed by Xen Orchestra with Netbox
+> Synchronizes pools managed by CloudVisor with Netbox
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # Plugins
 
-Xen Orchestra plugins allow you to extend features without rewriting the core of the application.
+CloudVisor plugins allow you to extend features without rewriting the core of the application.
 
 You can see your installed plugins in "Settings" then the "Plugins" page:
 

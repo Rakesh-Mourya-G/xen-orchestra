@@ -1,9 +1,9 @@
 # Partner Program
 
-The Xen Orchestra partner program is designed to offer you the opportunity to become a reseller of Xen Orchestra and deliver a full stack solution to your customers.
+The CloudVisor partner program is designed to offer you the opportunity to become a reseller of CloudVisor and deliver a full stack solution to your customers.
 
 :::tip
-Becoming a reseller will grant you a standard discount. However, **the reseller status is designed for companies that want to actively prospect for new Xen Orchestra users**. That's why we are asking our partners to **resell Xen Orchestra at least two times a year**. If you are acting as a third party purchaser answering to a specific request from one of your customers, you don't need to apply to the reseller program - you can follow [this process](./purchase.md#via-your-purchase-departement) instead.
+Becoming a reseller will grant you a standard discount. However, **the reseller status is designed for companies that want to actively prospect for new CloudVisor users**. That's why we are asking our partners to **resell CloudVisor at least two times a year**. If you are acting as a third party purchaser answering to a specific request from one of your customers, you don't need to apply to the reseller program - you can follow [this process](./purchase.md#via-your-purchase-departement) instead.
 :::
 
 ## Apply to the program

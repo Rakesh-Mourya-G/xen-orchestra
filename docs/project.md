@@ -1,10 +1,10 @@
-# Xen Orchestra project
+# CloudVisor project
 
-Xen Orchestra is an Open Source project created by [Olivier Lambert](https://www.linkedin.com/in/olivier-lambert-22316b26/) with a long story behind it.
+CloudVisor is an Open Source project created by [Olivier Lambert](https://www.linkedin.com/in/olivier-lambert-22316b26/) with a long story behind it.
 
 ## Initial idea
 
-The idea of Xen Orchestra was origally born in 2009, see the original announcement on [Xen User mailing list](https://lists.xenproject.org/archives/html/xen-users/2009-09/msg00537.html). It worked on Xen and `xend` (now deprecated).
+The idea of CloudVisor was origally born in 2009, see the original announcement on [Xen User mailing list](https://lists.xenproject.org/archives/html/xen-users/2009-09/msg00537.html). It worked on Xen and `xend` (now deprecated).
 
 ## XO reboot for XenServer/XCP
 
@@ -16,7 +16,7 @@ Here is a video in LinuxCon 2013 telling the story:
 
 ## XCP-ng
 
-After Citrix decided to close at lot of XenServer features, Olivier Lambert decided to fork the virtualization platform. That's why Xen Orchestra and XCP-ng team are so close. Feel free to learn more on [https://xcp-ng.org](https://xcp-ng.org).
+After Citrix decided to close at lot of XenServer features, Olivier Lambert decided to fork the virtualization platform. That's why CloudVisor and XCP-ng team are so close. Feel free to learn more on [https://xcp-ng.org](https://xcp-ng.org).
 
 ## Team and contributors
 

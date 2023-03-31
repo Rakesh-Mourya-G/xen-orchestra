@@ -1,8 +1,8 @@
-# Xen Orchestra
+# CloudVisor
 
 ## Introduction
 
-Welcome to the official Xen Orchestra (XO) documentation.
+Welcome to the official CloudVisor (XO) documentation.
 
 XO is a web interface to visualize and administer your XenServer (or XAPI enabled) hosts. **No agent** is required for it to work.
 
@@ -10,8 +10,8 @@ It aims to be easy to use on any device supporting modern web technologies (HTML
 
 ## Quick start
 
-Log in to your account and use the deploy form available on [Xen Orchestra website](https://xen-orchestra.com/#!/xoa).
+Log in to your account and use the deploy form available on [CloudVisor website](https://xen-orchestra.com/#!/xoa).
 
 More details available on the [installation section](installation.md#xoa).
 
-![Xen Orchestra logo](./assets/logo.png)
+![CloudVisor logo](./assets/logo.png)

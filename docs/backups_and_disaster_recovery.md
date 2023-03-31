@@ -1,6 +1,6 @@
 # Backups and Disaster Recovery
 
-This section is dedicated to any existing means to rollback or backup your VMs in Xen Orchestra.
+This section is dedicated to any existing means to rollback or backup your VMs in CloudVisor.
 
 ## Full backups
 
@@ -14,7 +14,7 @@ Full backups are space consuming! But they allow a very simple restoration witho
 
 ### Restore backups
 
-All your scheduled backup are acccessible in the "Restore" view in backup section of Xen Orchestra.
+All your scheduled backup are acccessible in the "Restore" view in backup section of CloudVisor.
 
 1. Select your mountpoint
 2. Choose the file you want to restore
@@ -32,7 +32,7 @@ Gzip compression is:
 - space efficient
 - consume less bandwidth (if your NFS share is far)
 
-If you have compression on your NFS share (or destination file-system like ZFS), you can disable compression in Xen Orchestra.
+If you have compression on your NFS share (or destination file-system like ZFS), you can disable compression in CloudVisor.
 
 Here is a network usage graph with 2 identical backup, the first one without compression:
 

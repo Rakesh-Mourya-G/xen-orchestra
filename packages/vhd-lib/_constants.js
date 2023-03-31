@@ -2,7 +2,7 @@
 
 exports.BLOCK_UNUSED = 0xffffffff
 
-// This lib has been extracted from the Xen Orchestra project.
+// This lib has been extracted from the CloudVisor project.
 exports.CREATOR_APPLICATION = 'xo  '
 
 // Sizes in bytes.

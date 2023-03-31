@@ -1,6 +1,6 @@
 # Community support
 
-We do our best to assist users running Xen Orchestra from the sources on [our community forums](https://xcp-ng.org/forum/category/12/xen-orchestra). However there's no guarantee you will receive a solution (from us or the community), nor any guarantee on a timeframe. Usually we are responsive, but keep in mind that if you need production level support, you should consider subscribing to our [XOA offers](https://xen-orchestra.com).
+We do our best to assist users running CloudVisor from the sources on [our community forums](https://xcp-ng.org/forum/category/12/xen-orchestra). However there's no guarantee you will receive a solution (from us or the community), nor any guarantee on a timeframe. Usually we are responsive, but keep in mind that if you need production level support, you should consider subscribing to our [XOA offers](https://xen-orchestra.com).
 
 :::warning
 If you installed your XO from a 3rd party script (any method outside [our official documentation](installation.md#from-the-sources)), please report your issue **first** on the 3rd party script repository. We can't waste time debugging 3rd party installers that very often lag behind our own deployment methods and fall out of date.
@@ -8,7 +8,7 @@ If you installed your XO from a 3rd party script (any method outside [our offici
 
 ## Current version
 
-With Xen Orchestra from the sources, you can check your current commit hash in the **About** section:
+With CloudVisor from the sources, you can check your current commit hash in the **About** section:
 
 ![](./assets/commitversion.png)
 
@@ -31,7 +31,7 @@ If you have issues with XO installed from the sources (via GitHub), please **alw
 Only after that, you can go to the [dedicated forum](https://xcp-ng.org/forum/category/12/xen-orchestra) to ask about your problem.
 
 :::tip
-If you want a consistent and tested solution for using Xen Orchestra, we strongly advise using our preconfigured and validated [Xen Orchestra Virtual Appliance](installation.md#xoa).
+If you want a consistent and tested solution for using CloudVisor, we strongly advise using our preconfigured and validated [CloudVisor Virtual Appliance](installation.md#xoa).
 :::
 
 ## Feature requests

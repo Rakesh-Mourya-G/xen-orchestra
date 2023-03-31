@@ -3,7 +3,7 @@
 With a subscription, you'll have both Pro Support and XOA Appliance with various features (depending on XOA Edition).
 
 :::tip
-To find which XOA Edition fits your needs, please read the [feature matrix page](https://xen-orchestra.com/#!/featuresmatrix) on Xen Orchestra website.
+To find which XOA Edition fits your needs, please read the [feature matrix page](https://xen-orchestra.com/#!/featuresmatrix) on CloudVisor website.
 :::
 
 You can buy XOA in multiple ways, depending on your needs. Click on the following links for more documentation:
@@ -90,7 +90,7 @@ Typically, you will provide two contacts:
 
 ![](./assets/purchase-menu.jpg)
 
-Now, you just have to pick the edition of Xen Orchestra you want to purchase for your IT team.
+Now, you just have to pick the edition of CloudVisor you want to purchase for your IT team.
 
 2. On the first payment screen, after you choose the plan and the subscription method. You can select the option "Buy for another account"
 
@@ -108,10 +108,10 @@ Once you have bound the plan to your end user account, you cannot change it. Dou
 
 ## As a reseller
 
-The Xen Orchestra partner program is designed to offer you the opportunity to become a reseller of Xen Orchestra and deliver a full stack solution to your customers.
+The CloudVisor partner program is designed to offer you the opportunity to become a reseller of CloudVisor and deliver a full stack solution to your customers.
 
 :::tip
-Becoming a reseller will grant you a standard discount. However, **the reseller status is designed for companies that want to actively prospect for new Xen Orchestra users**. That's why we are asking our partners to **resell Xen Orchestra at least two times a year**. If you are acting as a third party purchaser answering to a specific request from one of your customers, you don't need to apply to the reseller program - you can follow [this process](purchase.md#purchase-xoas) instead.
+Becoming a reseller will grant you a standard discount. However, **the reseller status is designed for companies that want to actively prospect for new CloudVisor users**. That's why we are asking our partners to **resell CloudVisor at least two times a year**. If you are acting as a third party purchaser answering to a specific request from one of your customers, you don't need to apply to the reseller program - you can follow [this process](purchase.md#purchase-xoas) instead.
 :::
 
 ### Apply to the program
@@ -176,7 +176,7 @@ If you choose a Stripe payment, you can always edit the credit card information 
 
 ## Upgrade your plan
 
-If you want to upgrade your active plan to a higher version of Xen Orchestra, you can do it from your **personal space**.
+If you want to upgrade your active plan to a higher version of CloudVisor, you can do it from your **personal space**.
 
 ### Step by step:
 

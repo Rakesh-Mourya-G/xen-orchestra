@@ -132,7 +132,7 @@ class Vdi {
     assert.notEqual(format, undefined)
 
     if (stream.length === undefined) {
-      throw new Error('Trying to import a VDI without a length field. Please report this error to Xen Orchestra.')
+      throw new Error('Trying to import a VDI without a length field. Please report this error to CloudVisor.')
     }
     try {
       await this.putResource(cancelToken, stream, '/import_raw_vdi/', {

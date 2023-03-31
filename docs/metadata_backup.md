@@ -2,7 +2,7 @@
 
 XCP-ng and Citrix Hypervisor (Xenserver) hosts use a database to store metadata about VMs and their associated resources such as storage and networking. Metadata forms this complete view of all VMs available on your pool. Backing up the metadata of your pool allows you to recover from a physical hardware failure scenario in which you lose your hosts without losing your storage (SAN, NAS...).
 
-In Xen Orchestra, Metadata backup is divided into two different options:
+In CloudVisor, Metadata backup is divided into two different options:
 
 - Pool metadata backup
 - XO configuration backup
@@ -38,7 +38,7 @@ If you click this button, it will show you Metadata backups available for restor
 
 ![](./assets/metadata-6.png)
 
-You can see both our Xen Orchestra config backup, and our pool metadata backup. To restore one, simply click the blue restore arrow, choose a backup date to restore, and click OK:
+You can see both our CloudVisor config backup, and our pool metadata backup. To restore one, simply click the blue restore arrow, choose a backup date to restore, and click OK:
 
 ![](./assets/metadata-7.png)
 

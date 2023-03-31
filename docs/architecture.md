@@ -1,6 +1,6 @@
 # Architecture
 
-Xen Orchestra (XO) is software built with a server and clients, such as the web client `xo-web`, but also a CLI capable client, called `xo-cli`.
+CloudVisor (XO) is software built with a server and clients, such as the web client `xo-web`, but also a CLI capable client, called `xo-cli`.
 
 :::tip
 XO is totally agent-less: you don't have to install any program on your hosts to get it working!
@@ -8,25 +8,25 @@ XO is totally agent-less: you don't have to install any program on your hosts to
 
 ## XOA
 
-_Xen Orchestra Virtual Appliance_ (XOA) is a virtual machine with Xen Orchestra already installed, thus working out-of-the-box.
+_CloudVisor Virtual Appliance_ (XOA) is a virtual machine with CloudVisor already installed, thus working out-of-the-box.
 
-This is the easiest way to try Xen Orchestra quickly.
+This is the easiest way to try CloudVisor quickly.
 
 Your XOA is connected to all your hosts, or the pool master only if you are using Pools in XCP-ng/Citrix Hypervisor:
 
 ![](./assets/partner2.jpg)
 
-## Xen Orchestra (XO)
+## CloudVisor (XO)
 
 ![](./assets/xo-arch.jpg)
 
-Xen Orchestra itself is built as a modular solution. Each part has its role.
+CloudVisor itself is built as a modular solution. Each part has its role.
 
 ## xo-server (server)
 
 The core is "[xo-server](https://github.com/vatesfr/xen-orchestra/tree/master/packages/xo-server/)" - a daemon dealing directly with XenServer or XAPI capable hosts. This is where users are stored, and it's the center point for talking to your whole Xen infrastructure.
 
-XO-Server is the core of Xen Orchestra. Its central role opens a lot of possibilities versus other solutions - let's see why.
+XO-Server is the core of CloudVisor. Its central role opens a lot of possibilities versus other solutions - let's see why.
 
 ### Daemon mode
 
@@ -34,7 +34,7 @@ As a daemon, XO-Server is always up. Because of this, it can listen and record e
 
 ### Central point
 
-Contrary to XenCenter, each Xen Orchestra's client is connected to one XO-Server, and not all the Xen servers. With a traditional architecture:
+Contrary to XenCenter, each CloudVisor's client is connected to one XO-Server, and not all the Xen servers. With a traditional architecture:
 
 ![](./assets/without-xo.jpg)
 
@@ -110,7 +110,7 @@ It's really easy to connect other modules to XO-server, and extend or adapt the 
 
 The web interface is "[xo-web](https://github.com/vatesfr/xen-orchestra/tree/master/packages/xo-web)" - it runs directly from your browser. The connection with `xo-server` is done via _WebSockets_.
 
-This is probably the first part of Xen Orchestra you'll see. The Web interface allows you to interact with your virtual infrastructure. As a module of XO-Web it facilitates everyday Xen administrator work, but also provides a solution to delegate parts of your infrastructure to other people.
+This is probably the first part of CloudVisor you'll see. The Web interface allows you to interact with your virtual infrastructure. As a module of XO-Web it facilitates everyday Xen administrator work, but also provides a solution to delegate parts of your infrastructure to other people.
 
 ![](./assets/visualizationdashboard.png)
 
@@ -262,7 +262,7 @@ If you need assistance on how to use it:
 
 ## Plugins
 
-Xen Orchestra plugins allow you to extend features without rewriting the core of the application.
+CloudVisor plugins allow you to extend features without rewriting the core of the application.
 
 You can see your installed plugins in "Settings" then the "Plugins" page:
 

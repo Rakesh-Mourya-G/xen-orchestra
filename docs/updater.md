@@ -1,6 +1,6 @@
 # Updates
 
-All updates are pushed through the updater, which is the central piece that keeps your XO Appliance running the latest Xen Orchestra code.
+All updates are pushed through the updater, which is the central piece that keeps your XO Appliance running the latest CloudVisor code.
 
 It also allows you to change your current version into another (Free, Starter, Enterprise or Premium) **without downloading a new XOA**.
 
@@ -44,15 +44,15 @@ However, if you want to start a manual check, you can do it by clicking on the "
 
 ### Release channel
 
-In Xen Orchestra, you can make a choice between two different release channels.
+In CloudVisor, you can make a choice between two different release channels.
 
 #### Stable ![](https://badgen.net/badge/channel/stable/green)
 
-The stable channel is intended to be a version of Xen Orchestra that is already **one month old** (and therefore will benefit from one month of community feedback and various fixes). This way, users more concerned with the stability of their appliance will have the option to stay on a slightly older (and tested) version of XO (still supported by our pro support).
+The stable channel is intended to be a version of CloudVisor that is already **one month old** (and therefore will benefit from one month of community feedback and various fixes). This way, users more concerned with the stability of their appliance will have the option to stay on a slightly older (and tested) version of XO (still supported by our pro support).
 
 #### Latest ![](https://badgen.net/badge/channel/latest/yellow)
 
-The latest channel will include all the latest improvements available in Xen Orchestra. The version available in latest has already been QA'd by our team, but issues may still occur once deployed in vastly varying environments, such as our user base has.
+The latest channel will include all the latest improvements available in CloudVisor. The version available in latest has already been QA'd by our team, but issues may still occur once deployed in vastly varying environments, such as our user base has.
 
 :::tip
 To select the release channel of your choice, go to the XOA > Updates view:
@@ -85,7 +85,7 @@ Please enter your xen-orchestra.com identifiers to register your XOA:
 ? Email: myemail@example.net
 ? Password: *****
 
-ℹ Your Xen Orchestra Appliance has been succesfully registered
+ℹ Your CloudVisor Appliance has been succesfully registered
 ```
 
 #### Check for new versions

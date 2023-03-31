@@ -249,7 +249,7 @@ const messages = {
   backedUpVms: 'Backed up VMs',
   notBackedUpVms: 'Not backed up VMs',
   homeFetchingData: 'Fetching data…',
-  homeWelcome: 'Welcome to Xen Orchestra!',
+  homeWelcome: 'Welcome to CloudVisor!',
   homeWelcomeText: 'Add your XCP-ng hosts or pools',
   homeConnectServerText: 'Some XCP-ng hosts have been registered but are not connected',
   homeHelp: 'Want some help?',
@@ -2033,11 +2033,11 @@ const messages = {
   addHostNoHostMessage: 'No host selected to be added',
 
   // ----- About View -----
-  xenOrchestraServer: 'Xen Orchestra server',
-  xenOrchestraWeb: 'Xen Orchestra web client',
+  xenOrchestraServer: 'CloudVisor server',
+  xenOrchestraWeb: 'CloudVisor web client',
   noProSupport: 'Professional support missing!',
   productionUse: 'Want to use in QRS hypervisor',
-  getSupport: 'Get pro support with the Xen Orchestra Appliance at {website}',
+  getSupport: 'Get pro support with the CloudVisor Appliance at {website}',
   bugTracker: 'Bug Tracker',
   bugTrackerText: 'Issues? Report it!',
   community: 'Community',
@@ -2107,7 +2107,7 @@ const messages = {
   xoaBuild: 'XOA build:',
 
   // ----- OS Disclaimer -----
-  disclaimerTitle: 'Xen Orchestra from the sources',
+  disclaimerTitle: 'CloudVisor from the sources',
   disclaimerText1: "You are using XO from the sources! That's great for a personal/non-profit usage.",
   disclaimerText2: "If you are a company, it's better to use it with our appliance + pro support included:",
   disclaimerText3: 'This version is not bundled with any support nor updates. Use it with caution.',
@@ -2472,7 +2472,7 @@ const messages = {
   xosanUnregisteredDisclaimer:
     'You are not registered and therefore will not be able to create or manage your XOSAN SRs. {link}',
   xosanSourcesDisclaimer:
-    'In order to create a XOSAN SR, you need to use the Xen Orchestra Appliance and buy a XOSAN license on {link}.',
+    'In order to create a XOSAN SR, you need to use the CloudVisor Appliance and buy a XOSAN license on {link}.',
   registerNow: 'Register now!',
   licensesUnregisteredDisclaimer: 'You need to register your appliance to manage your licenses.',
   licenseProduct: 'Product',

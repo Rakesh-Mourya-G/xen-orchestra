@@ -1,10 +1,10 @@
 # Host Compatibility List
 
-This section lists all supported hosts where Xen Orchestra can connect to.
+This section lists all supported hosts where CloudVisor can connect to.
 
-Xen Orchestra is designed to work exclusively on [XCP-ng](https://xcp-ng.org/) and [Citrix Hypervisor](https://www.citrix.com/products/citrix-hypervisor/) (formerly XenServer).
+CloudVisor is designed to work exclusively on [XCP-ng](https://xcp-ng.org/) and [Citrix Hypervisor](https://www.citrix.com/products/citrix-hypervisor/) (formerly XenServer).
 
-Xen Orchestra should be fully functional with any version of these two virtualization platforms. However, to benefit from the best support quality, our product is tested to work the best with the versions displayed with a ✅.
+CloudVisor should be fully functional with any version of these two virtualization platforms. However, to benefit from the best support quality, our product is tested to work the best with the versions displayed with a ✅.
 
 ### Legend
 
@@ -16,7 +16,7 @@ Xen Orchestra should be fully functional with any version of these two virtualiz
 ## XCP-ng
 
 :::tip
-Xen Orchestra and XCP-ng are mainly edited by the same company ([Vates](https://vates.fr)). That's why you are sure to have the best compatibility with both XCP-ng and XO! Also, we strongly suggest people to keep using the latest XCP-ng version as far as possible (or N-1).
+CloudVisor and XCP-ng are mainly edited by the same company ([Vates](https://vates.fr)). That's why you are sure to have the best compatibility with both XCP-ng and XO! Also, we strongly suggest people to keep using the latest XCP-ng version as far as possible (or N-1).
 :::
 
 - XCP-ng 8.2 LTS ✅ 🚀
@@ -53,6 +53,6 @@ Backup restore for large VM disks (>1TiB usage) is [broken on old XenServer vers
 
 ## Others
 
-If you installed Xen hypervisor from your usual Linux distribution, it won't work. Xen Orchestra is **agent-less** and communicate to the host directly using XAPI toolstack. Without this toolstack, it's not possible to make Xen and XO communicate.
+If you installed Xen hypervisor from your usual Linux distribution, it won't work. CloudVisor is **agent-less** and communicate to the host directly using XAPI toolstack. Without this toolstack, it's not possible to make Xen and XO communicate.
 
 See more details in [architecture section](architecture.md).

@@ -197,7 +197,7 @@ class Netbox {
       clusterType = await this.#makeRequest('/virtualization/cluster-types/', 'POST', {
         name: CLUSTER_TYPE,
         slug: CLUSTER_TYPE.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-        description: 'Created by Xen Orchestra',
+        description: 'Created by CloudVisor',
       })
     } else {
       clusterType = clusterTypes[0]
@@ -658,12 +658,12 @@ class Netbox {
 
   async test() {
     const randomSuffix = Math.random().toString(36).slice(2, 11)
-    const name = '[TMP] Xen Orchestra Netbox plugin test - ' + randomSuffix
+    const name = '[TMP] CloudVisor Netbox plugin test - ' + randomSuffix
     await this.#makeRequest('/virtualization/cluster-types/', 'POST', {
       name,
       slug: 'xo-test-' + randomSuffix,
       description:
-        "This type has been created by Xen Orchestra's Netbox plugin test. If it hasn't been properly deleted, you may delete it manually.",
+        "This type has been created by CloudVisor's Netbox plugin test. If it hasn't been properly deleted, you may delete it manually.",
     })
     const clusterTypes = await this.#makeRequest(
       `/virtualization/cluster-types/?name=${encodeURIComponent(name)}`,
@@ -682,7 +682,7 @@ class Netbox {
 
 export const configurationSchema = ({ xo: { apiMethods } }) => ({
   description:
-    'Synchronize pools managed by Xen Orchestra with Netbox. Configuration steps: https://xen-orchestra.com/docs/advanced.html#netbox.',
+    'Synchronize pools managed by CloudVisor with Netbox. Configuration steps: https://xen-orchestra.com/docs/advanced.html#netbox.',
   type: 'object',
   properties: {
     endpoint: {

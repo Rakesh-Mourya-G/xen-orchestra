@@ -326,7 +326,7 @@ class BackupReportsXoPlugin {
     markdown.push('---', '', `*${pkg.name} v${pkg.version}*`)
 
     return this._sendReport({
-      subject: `[Xen Orchestra] ${log.status} − Metadata backup report for ${log.jobName} ${STATUS_ICON[log.status]}`,
+      subject: `[CloudVisor] ${log.status} − Metadata backup report for ${log.jobName} ${STATUS_ICON[log.status]}`,
       markdown: toMarkdown(markdown),
       success: log.status === 'success',
     })
@@ -355,7 +355,7 @@ class BackupReportsXoPlugin {
         `*${pkg.name} v${pkg.version}*`,
       ]
       return this._sendReport({
-        subject: `[Xen Orchestra] ${log.status} − Backup report for ${jobName} ${STATUS_ICON[log.status]}`,
+        subject: `[CloudVisor] ${log.status} − Backup report for ${jobName} ${STATUS_ICON[log.status]}`,
         mailReceivers,
         markdown: toMarkdown(markdown),
         success: false,
@@ -590,7 +590,7 @@ class BackupReportsXoPlugin {
     return this._sendReport({
       mailReceivers,
       markdown: toMarkdown(markdown),
-      subject: `[Xen Orchestra] ${log.status} − Backup report for ${jobName} ${STATUS_ICON[log.status]}`,
+      subject: `[CloudVisor] ${log.status} − Backup report for ${jobName} ${STATUS_ICON[log.status]}`,
       success: log.status === 'success',
     })
   }
@@ -647,7 +647,7 @@ class BackupReportsXoPlugin {
 
       markdown = markdown.join('\n')
       return this._sendReport({
-        subject: `[Xen Orchestra] ${globalStatus} ${icon}`,
+        subject: `[CloudVisor] ${globalStatus} ${icon}`,
         markdown,
         success: false,
       })
@@ -792,7 +792,7 @@ class BackupReportsXoPlugin {
 
     return this._sendReport({
       markdown,
-      subject: `[Xen Orchestra] ${globalStatus} − Backup report for ${tag} ${
+      subject: `[CloudVisor] ${globalStatus} − Backup report for ${tag} ${
         globalSuccess ? ICON_SUCCESS : nFailures !== 0 ? ICON_FAILURE : ICON_SKIPPED
       }`,
       success: globalSuccess,

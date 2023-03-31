@@ -41,7 +41,7 @@ In order to work, XOSAN need a minimal set of requirements.
 
 XOSAN can be deployed on an existing **Local LVM storage**, that XenServer configure by default during its installation. You need 10GiB for XOSAN VM (one on each host) and the rest for XOSAN data, eg all the space left.
 
-However, if you have unused disks on your host, you can also create yourself a local LVM storage while using Xen Orchestra:
+However, if you have unused disks on your host, you can also create yourself a local LVM storage while using CloudVisor:
 
 - Go on the "New" menu entry, then select "Storage"
 - Select the host having the disk you want to use for XOSAN
@@ -265,7 +265,7 @@ XOSAN will need a pool with:
 
 After the completion of all the requirements, you can install XOSAN itself.
 
-1. Go in your XOSAN panel in Xen Orchestra.
+1. Go in your XOSAN panel in CloudVisor.
 
 ![](./assets/xosan-panel.png)
 
@@ -316,9 +316,9 @@ XOSAN is a 100% software defined solution for XenServer hyperconvergence. You ca
 
 ### Step 1
 
-You will need to be registered on our website in order to use Xen Orchestra. If you are not yet registered, [here is the way](https://xen-orchestra.com/#!/signup)
+You will need to be registered on our website in order to use CloudVisor. If you are not yet registered, [here is the way](https://xen-orchestra.com/#!/signup)
 
-SSH in your XenServer and use the command line `bash -c "$(wget -qO- https://xoa.io/deploy)"` - it will deploy Xen Orchestra Appliance on your XenServer infrastructure which is required to use XOSAN.
+SSH in your XenServer and use the command line `bash -c "$(wget -qO- https://xoa.io/deploy)"` - it will deploy CloudVisor Appliance on your XenServer infrastructure which is required to use XOSAN.
 
 > Note: You can also download the XVA file and follow [these instructions](https://xen-orchestra.com/docs/xoa.html#the-alternative).
 
@@ -326,7 +326,7 @@ SSH in your XenServer and use the command line `bash -c "$(wget -qO- https://xoa
 
 Register your XOA appliance
 
-> _If you are not familiar with Xen Orchestra, note that you can also activate a 15 days Premium trial for XOA. More informations [here](https://xen-orchestra.com/#!/trial)_
+> _If you are not familiar with CloudVisor, note that you can also activate a 15 days Premium trial for XOA. More informations [here](https://xen-orchestra.com/#!/trial)_
 
 ![Registration](https://xen-orchestra.com/docs/assets/xo5register.png)
 

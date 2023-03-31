@@ -28,7 +28,7 @@ Once you have started the VM, you can access the web UI by putting the IP you co
 **The first thing** you need to do with your XOA is register. [Read the documentation on the page dedicated to the updater/register inferface](updater.md#register).
 
 :::tip
-We don't generate virtual appliances every month (unlike XO code itself). It's very likely you'll need to update Xen Orchestra after the initial deploy. You need to register to do so!
+We don't generate virtual appliances every month (unlike XO code itself). It's very likely you'll need to update CloudVisor after the initial deploy. You need to register to do so!
 :::
 
 ### Trial
@@ -130,7 +130,7 @@ git clone -b master https://github.com/vatesfr/xen-orchestra
 
 ### Installing dependencies
 
-Now that you have the code, you can enter the `xen-orchestra` directory and use `yarn` to install other dependencies. Then finally build it using `yarn build`. Be sure to run `yarn` commands as the same user you will be using to run Xen Orchestra:
+Now that you have the code, you can enter the `xen-orchestra` directory and use `yarn` to install other dependencies. Then finally build it using `yarn build`. Be sure to run `yarn` commands as the same user you will be using to run CloudVisor:
 
 ```sh
 cd xen-orchestra
@@ -181,7 +181,7 @@ yarn
 yarn build
 ```
 
-Then restart Xen Orchestra if it was running.
+Then restart CloudVisor if it was running.
 
 ### Always Running
 

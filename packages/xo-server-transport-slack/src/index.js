@@ -67,7 +67,7 @@ class XoServerTransportSlack {
     return this._sendSlack({
       message: `Hi there,
 
-The transport-slack plugin for Xen Orchestra server seems to be working fine, nicely done :)`,
+The transport-slack plugin for CloudVisor server seems to be working fine, nicely done :)`,
     })
   }
 

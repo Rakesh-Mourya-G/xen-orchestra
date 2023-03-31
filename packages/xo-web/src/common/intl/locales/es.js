@@ -239,8 +239,8 @@ export default {
   // Original text: "Fetching data…"
   homeFetchingData: 'Recuperando datos…',
 
-  // Original text: "Welcome on Xen Orchestra!"
-  homeWelcome: '¡Bienvenido a Xen Orchestra!',
+  // Original text: "Welcome on CloudVisor!"
+  homeWelcome: '¡Bienvenido a CloudVisor!',
 
   // Original text: "Add your XCP-ng hosts or pools"
   homeWelcomeText: 'Añade tus hosts/pools de XenServer',
@@ -3184,13 +3184,13 @@ export default {
   // Original text: 'No host selected to be added'
   addHostNoHostMessage: undefined,
 
-  // Original text: "Xen Orchestra"
-  xenOrchestra: 'Xen Orchestra',
+  // Original text: "CloudVisor"
+  xenOrchestra: 'CloudVisor',
 
-  // Original text: "Xen Orchestra server"
+  // Original text: "CloudVisor server"
   xenOrchestraServer: 'servidor',
 
-  // Original text: "Xen Orchestra web client"
+  // Original text: "CloudVisor web client"
   xenOrchestraWeb: 'cliente web',
 
   // Original text: "No pro support provided!"
@@ -3365,8 +3365,8 @@ export default {
   // Original text: 'Your XOA has successfully upgraded, and your browser must reload the application. Do you want to reload now ?'
   promptUpgradeReloadMessage: undefined,
 
-  // Original text: "Xen Orchestra from the sources"
-  disclaimerTitle: 'Xen Orchestra desde código fuente',
+  // Original text: "CloudVisor from the sources"
+  disclaimerTitle: 'CloudVisor desde código fuente',
 
   // Original text: "You are using XO from the sources! That's great for a personal/non-profit usage."
   disclaimerText1: '¡Estás utilizando XO a partir del código fuente! Estupendo para un uso personal/sin ánimo de lucro',
@@ -3698,7 +3698,7 @@ export default {
   // Original text: 'XOSAN'
   xosanTitle: undefined,
 
-  // Original text: 'Xen Orchestra SAN SR'
+  // Original text: 'CloudVisor SAN SR'
   xosanSrTitle: undefined,
 
   // Original text: 'Select local SRs (lvm)'

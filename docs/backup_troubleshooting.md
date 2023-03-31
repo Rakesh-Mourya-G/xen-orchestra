@@ -14,7 +14,7 @@ Another good way to check if there is activity is the XOA VM stats view (on the 
 
 Backup jobs regularly delete snapshots. When a snapshot is deleted, either manually or via a backup job, it triggers the need for Xenserver to coalesce the VDI chain - to merge the remaining VDIs and base copies in the chain. This means generally we cannot take too many new snapshots on said VM until Xenserver has finished running a coalesce job on the VDI chain.
 
-This mechanism and scheduling is handled by XenServer itself, not Xen Orchestra. But we can check your existing VDI chain and avoid creating more snapshots than your storage can merge. If we don't, this will lead to catastrophic consequences. Xen Orchestra is the **only** XenServer/XCP backup product that takes this into account and offers protection.
+This mechanism and scheduling is handled by XenServer itself, not CloudVisor. But we can check your existing VDI chain and avoid creating more snapshots than your storage can merge. If we don't, this will lead to catastrophic consequences. CloudVisor is the **only** XenServer/XCP backup product that takes this into account and offers protection.
 
 Without this detection, you could have 2 potential issues:
 
@@ -80,7 +80,7 @@ To check your free space, enter your XOA and run `xoa check` to check free syste
 
 ## Error: no VMs match this pattern
 
-This is happening when you have a _smart backup job_ that doesn't match any VMs. For example: you created a job to backup all running VMs. If no VMs are running on backup schedule, you'll have this message. This could also happen if you lost connection with your pool master (the VMs aren't visible anymore from Xen Orchestra).
+This is happening when you have a _smart backup job_ that doesn't match any VMs. For example: you created a job to backup all running VMs. If no VMs are running on backup schedule, you'll have this message. This could also happen if you lost connection with your pool master (the VMs aren't visible anymore from CloudVisor).
 
 Edit your job and try to see matching VMs or check if your pool is connected to XOA.
 

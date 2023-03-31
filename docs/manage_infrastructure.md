@@ -4,7 +4,7 @@ This section is related on how to manage your XCP-ng/Citrix Hypervisor infrastru
 
 ## Home view
 
-The home view is what you see when you access your Xen Orchestra URL. It displays all running VMs. This can be configured to your needs (see the "Filters section" below).
+The home view is what you see when you access your CloudVisor URL. It displays all running VMs. This can be configured to your needs (see the "Filters section" below).
 
 If you don't have any servers connected, you'll see a panel telling you to add a server:
 
@@ -20,7 +20,7 @@ After clicking on connect, the server is displayed as connected:
 
 ![](./assets/xo5connectedserver.png)
 
-Now go back to the Home view (or click on the "Xen Orchestra" title on the top left of the screen), you'll see the default home view of VM objects.
+Now go back to the Home view (or click on the "CloudVisor" title on the top left of the screen), you'll see the default home view of VM objects.
 
 ### VMs
 
@@ -82,7 +82,7 @@ The idea is not just to provide a good search engine, but also a complete soluti
 - sort your results for more pertinent insight
 
 :::tip
-Pro Tip: the URL of Xen Orchestra contains the search string, eg `home?s=power_state%3Arunning+`. You can share these URLs to your colleagues to share your search!
+Pro Tip: the URL of CloudVisor contains the search string, eg `home?s=power_state%3Arunning+`. You can share these URLs to your colleagues to share your search!
 :::
 
 ### Search examples
@@ -223,7 +223,7 @@ Or in the home view:
 
 #### Select your Pool
 
-Because Xen Orchestra can be connected to multiple pools, you must select which one you want to create your VMs on:
+Because CloudVisor can be connected to multiple pools, you must select which one you want to create your VMs on:
 
 ![](./assets/xo5createonpool.png)
 
@@ -325,13 +325,13 @@ XCP-ng doesn't limit VMs to 32 vCPU
 
 Thanks to Xen Storage Motion, it's easy to move a VM disk from one storage location to another, while the VM is running! This feature can help you migrate from your local storage to a SAN, or just upgrade your SAN without any downtime.
 
-To do so: Access the Xen Orchestra page for your running VM, then enter the Disk tab. Long click on the current SR of the disk, and a drop down menu will be displayed with all compatible destinations. Just select one, that's all: the migration will start live!
+To do so: Access the CloudVisor page for your running VM, then enter the Disk tab. Long click on the current SR of the disk, and a drop down menu will be displayed with all compatible destinations. Just select one, that's all: the migration will start live!
 
 ![](./assets/xo5diskmigrate.png)
 
 #### Offline VDI migration
 
-Even though it's not currently supported in XenServer, we can do it in Xen Orchestra. It's exactly the same process as a running VM.
+Even though it's not currently supported in XenServer, we can do it in CloudVisor. It's exactly the same process as a running VM.
 
 ### VM recovery
 
@@ -387,7 +387,7 @@ By default, XOA will try to make a snapshot with quiesce. If the VM does not sup
 
 ## VM import and export
 
-Xen Orchestra can import and export VM's in XVA format (XenServer format) or import OVA files (OVF1 format).
+CloudVisor can import and export VM's in XVA format (XenServer format) or import OVA files (OVF1 format).
 
 :::tip
 We support OVA import from VirtualBox. Feel free to report issues with OVA from other virtualization platforms.
@@ -427,7 +427,7 @@ In the VM "Snapshots" tab, you can also export a snapshot like you export a VM.
 
 ## Hosts management
 
-Outside updates (see next section), you can also do host management via Xen Orchestra. Basic operations are supported, like reboot, shutdown and so on.
+Outside updates (see next section), you can also do host management via CloudVisor. Basic operations are supported, like reboot, shutdown and so on.
 
 But there's also some specific things, like Maintenance mode.
 
@@ -450,7 +450,7 @@ Note that maintenance mode will be **automatically exited after a host reboot**.
 
 ## Pool and host updates
 
-Xen Orchestra is here to help you to manage all your pools and hosts updates. Note there's a difference on updates between XCP-ng and Citrix Hypervisor, since they are not using the same mechanism. However, the view on available updates and updating is very similar.
+CloudVisor is here to help you to manage all your pools and hosts updates. Note there's a difference on updates between XCP-ng and Citrix Hypervisor, since they are not using the same mechanism. However, the view on available updates and updating is very similar.
 
 :::tip
 Updates can be called both "patches" or "updates", it doesn't matter. Updates are distributed via an ISO file containing RPMs for Citrix Hypervisor, while in XCP-ng they are just traditional RPMs hosted in a central repository and its mirrors, like a regular Linux distribution.
@@ -458,7 +458,7 @@ Updates can be called both "patches" or "updates", it doesn't matter. Updates ar
 
 ### Available updates
 
-You'll be notified by Xen Orchestra directly in the main XO menu (on the left), with a yellow triangle:
+You'll be notified by CloudVisor directly in the main XO menu (on the left), with a yellow triangle:
 
 ![](./assets/availableupdates.png)
 
@@ -475,12 +475,12 @@ You can also see the available updates in the Dashboard view.
 On XCP-ng, there's multiple way to update your pools and hosts.
 
 :::details ⚙️ How it works
-Xen Orchestra will request a plugin, bundled and hosted within your XCP-ng hosts. This plugin will query the status of updates. Then, when the update will be apply, it's also the plugin that will download and apply them. So unlike with Citrix Hypervisor, Xen Orchestra will not fetch or download updates, but it will order the host to do it by itself. Be sure that your host(s) can access the update repositories.
+CloudVisor will request a plugin, bundled and hosted within your XCP-ng hosts. This plugin will query the status of updates. Then, when the update will be apply, it's also the plugin that will download and apply them. So unlike with Citrix Hypervisor, CloudVisor will not fetch or download updates, but it will order the host to do it by itself. Be sure that your host(s) can access the update repositories.
 :::
 
 #### Rolling Pool Updates (RPU)
 
-Also known as RPU, **this is the advised way to update your pool**. By just clicking on one button, Xen Orchestra will automatically move VMs around, apply updates and reboot the hosts, without any service interruption. The following button is available in the Pool view, on "Patches" tab:
+Also known as RPU, **this is the advised way to update your pool**. By just clicking on one button, CloudVisor will automatically move VMs around, apply updates and reboot the hosts, without any service interruption. The following button is available in the Pool view, on "Patches" tab:
 
 ![](./assets/rpubutton.png)
 
@@ -513,7 +513,7 @@ We do NOT recommend to install updates to individual hosts. Obviously except if 
 ### XenServer/Citrix Hypervisor
 
 :::details ⚙️ How it works
-Xen Orchestra will directly request a specific XML, hosted by Citrix. It will be analyzed and compared to the patch level on your hosts. If there's available/missing updates, XO will download it directly, then send it to the pool, and finally ask the pool to apply it. In that scenario, you should check if Xen Orchestra can access outside to get those updates.
+CloudVisor will directly request a specific XML, hosted by Citrix. It will be analyzed and compared to the patch level on your hosts. If there's available/missing updates, XO will download it directly, then send it to the pool, and finally ask the pool to apply it. In that scenario, you should check if CloudVisor can access outside to get those updates.
 :::
 
 #### Pool updates
@@ -627,7 +627,7 @@ This is the place to compare metrics on comparable objects (VMs to VMs, hosts to
 
 ## Docker support
 
-This allows you to enjoy Docker containers displayed directly in Xen Orchestra.
+This allows you to enjoy Docker containers displayed directly in CloudVisor.
 
 ### Prerequisites
 
@@ -689,5 +689,5 @@ xscontainer-prepare-vm -v <VM_UUID> -u <username>
 ```
 
 :::tip
-Because "prepare-vm" is not exposed outside of the Dom0 (yet?), we can't use Xen Orchestra to give you a one-click solution as of now.
+Because "prepare-vm" is not exposed outside of the Dom0 (yet?), we can't use CloudVisor to give you a one-click solution as of now.
 :::

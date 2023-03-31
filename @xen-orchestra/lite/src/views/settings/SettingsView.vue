@@ -5,7 +5,7 @@
       <UiCardTitle>{{ $t("about") }}</UiCardTitle>
       <div class="sections">
         <div>
-          <h5>Xen Orchestra Lite</h5>
+          <h5>CloudVisor Lite</h5>
           <UiKeyValueList>
             <UiKeyValueRow>
               <template #key>{{ $t("version") }}</template>
@@ -24,7 +24,7 @@
                   rel="noopener noreferrer"
                   href="https://xen-orchestra.com/blog/"
                 >
-                  {{ $t("news-name", { name: "Xen Orchestra" }) }}
+                  {{ $t("news-name", { name: "CloudVisor" }) }}
                 </a>
               </template>
             </UiKeyValueRow>
@@ -36,7 +36,7 @@
                   rel="noopener noreferrer"
                   href="https://xcp-ng.org/forum/category/12/xen-orchestra"
                 >
-                  {{ $t("community-name", { name: "Xen Orchestra" }) }}
+                  {{ $t("community-name", { name: "CloudVisor" }) }}
                 </a>
               </template>
             </UiKeyValueRow>

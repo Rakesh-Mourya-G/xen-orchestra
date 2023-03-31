@@ -1,6 +1,6 @@
 # Releases
 
-Xen Orchestra is distributed in 2 ways:
+CloudVisor is distributed in 2 ways:
 
 1. Through XOA
 2. "as is" from GitHub

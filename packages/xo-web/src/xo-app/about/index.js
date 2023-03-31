@@ -48,7 +48,7 @@ export default class About extends Component {
                 <Col>
                   <Icon icon='git' size={4} />
                   <h4>
-                    Xen Orchestra, commit{' '}
+                    CloudVisor, commit{' '}
                     <a href={'https://github.com/vatesfr/xen-orchestra/commit/' + COMMIT_ID}>{COMMIT_ID.slice(0, 5)}</a>
                   </h4>
                 </Col>

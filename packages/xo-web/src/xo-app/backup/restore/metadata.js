@@ -192,7 +192,7 @@ export default decorate([
               backup = collection[jobId] = {
                 backups: [],
                 id: jobId,
-                item: `Xen Orchestra (${jobName})`,
+                item: `CloudVisor (${jobName})`,
                 label: jobName,
                 type: 'XO',
               }

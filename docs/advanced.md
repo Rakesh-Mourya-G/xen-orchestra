@@ -1,6 +1,6 @@
 # Advanced features
 
-This section is dedicated to all others Xen Orchestra "advanced features".
+This section is dedicated to all others CloudVisor "advanced features".
 
 ## Live Telemetry
 
@@ -114,7 +114,7 @@ We need your feedback on this feature!
 
 The plugin "web-hooks" needs to be installed and loaded for this feature to work.
 
-You can trigger an HTTP POST request to a URL when a Xen Orchestra API method is called or when a backup job runs.
+You can trigger an HTTP POST request to a URL when a CloudVisor API method is called or when a backup job runs.
 
 - Go to Settings > Plugins > Web hooks
 - Add new hooks
@@ -305,9 +305,9 @@ When the power outage is over, all you need to do is:
 
 ## Terraform provider
 
-Terraform is a cloud/platform agnostic tool for building, changing, and versioning infrastructure. Terraform can manage existing and popular service providers as well as custom in-house solutions (like Xen Orchestra). It can manage resources through their entire lifecycle or even manage infrastructure it didn't initially create.
+Terraform is a cloud/platform agnostic tool for building, changing, and versioning infrastructure. Terraform can manage existing and popular service providers as well as custom in-house solutions (like CloudVisor). It can manage resources through their entire lifecycle or even manage infrastructure it didn't initially create.
 
-We sponsored a developer to build a [Xen Orchestra provider for Terraform](https://registry.terraform.io/providers/terra-farm/xenorchestra/latest), so you can use it as a central point for your whole virtualized infrastructure. The source code is [available on Github](https://github.com/terra-farm/terraform-provider-xenorchestra/), and contributions are welcome!
+We sponsored a developer to build a [CloudVisor provider for Terraform](https://registry.terraform.io/providers/terra-farm/xenorchestra/latest), so you can use it as a central point for your whole virtualized infrastructure. The source code is [available on Github](https://github.com/terra-farm/terraform-provider-xenorchestra/), and contributions are welcome!
 
 :::tip
 Don't miss [our blog post series about it](https://xen-orchestra.com/blog/author/ddelnano/), written by Dom Del Nano, the original developer of this provider!
@@ -362,9 +362,9 @@ XO will try to find the right prefix for each IP address. If it can't find a pre
 In Netbox 2.x, custom fields can be created from the Admin panel > Custom fields > Add custom field.
 :::
 
-### In Xen Orchestra
+### In CloudVisor
 
-- Go to Xen Orchestra > Settings > Plugins > Netbox and fill out the configuration:
+- Go to CloudVisor > Settings > Plugins > Netbox and fill out the configuration:
   - Endpoint: the URL of your Netbox instance (e.g.: `https://netbox.company.net`)
   - Unauthorized certificate: only for HTTPS, enable this option if your Netbox instance uses a self-signed SSL certificate
   - Token: the token you generated earlier
